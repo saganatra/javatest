@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-- source: ./DemoWebApp.war
+- source: .
   destination: /opt/apache-tomcat-8.0.24/webapps
