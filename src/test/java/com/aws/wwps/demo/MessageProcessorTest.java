@@ -33,7 +33,7 @@ public class MessageProcessorTest
      */
     public void testApp()
     {
-    	assertEquals("stuff", MessageProcessor.someCall());
+    	assertEquals("stuff2", MessageProcessor.someCall());
     }
 
 }
