@@ -17,6 +17,11 @@ import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
 import com.amazonaws.services.sqs.model.SendMessageRequest;
 
 public class MessageProcessor {
+
+	public static String someCall() {
+		return "stuff";
+	}
+
 	public static int push () {
 		
         AWSCredentials credentials = null;
