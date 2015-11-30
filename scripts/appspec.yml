@@ -1,11 +1,11 @@
 version: 0.0
 os: linux
 files:
-- source: /
+- source: /DemoWebApp
   destination: /opt/apache-tomcat/webapps/DemoWebApp
 hooks:
   AfterInstall:
-    - location: /opt/apache-tomcat/bin/shutdown.sh
+    - location: target/scripts/stop-server.sh
       timeout: 180
-    - location: /opt/apache-tomcat/bin/startup.sh
+    - location: target/scripts/start-server.sh
       timeout: 180
