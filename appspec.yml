@@ -3,3 +3,9 @@ os: linux
 files:
 - source: /
   destination: /opt/apache-tomcat/webapps/DemoWebApp
+hooks:
+  AfterInstall:
+    - location: /opt/apache-tomcat/bin/shutdown.sh
+      timeout: 180
+    - location: /opt/apache-tomcat/bin/startup.sh
+      timeout: 180
