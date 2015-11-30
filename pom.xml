@@ -51,6 +51,18 @@
                         <goal>run</goal>
                     </goals>
                 </execution>
+                <execution>
+                    <id>createTar</id>
+                    <phase>package</phase>
+                    <configuration>
+                        <tasks>
+			<tar destfile="demo-app.tar" basedir="target"/>
+                        </tasks>
+                    </configuration>
+                    <goals>
+                        <goal>run</goal>
+                    </goals>
+                </execution>
             </executions>
          </plugin>
 	</plugins>
