@@ -5,7 +5,7 @@ files:
   destination: /opt/apache-tomcat/webapps/DemoWebApp
 hooks:
   AfterInstall:
-    - location: target/scripts/stop-server.sh
+    - location: scripts/stop-server.sh
       timeout: 180
-    - location: target/scripts/start-server.sh
+    - location: scripts/start-server.sh
       timeout: 180
