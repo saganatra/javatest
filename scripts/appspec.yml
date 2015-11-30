@@ -4,6 +4,9 @@ files:
 - source: /DemoWebApp
   destination: /opt/apache-tomcat/webapps/DemoWebApp
 hooks:
+  BeforeInstall:
+    - location: scripts/remove-app.sh
+      timeout: 180
   AfterInstall:
     - location: scripts/stop-server.sh
       timeout: 180

@@ -45,6 +45,7 @@
           		<copy file="scripts/appspec.yml" todir="target"/>
           		<copy file="scripts/start-server.sh" todir="target/scripts"/>
           		<copy file="scripts/stop-server.sh" todir="target/scripts"/>
+          		<copy file="scripts/remove-app.sh" todir="target/scripts"/>
                         </tasks>
                     </configuration>
                     <goals>
